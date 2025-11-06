@@ -39,7 +39,7 @@ while True:
         value = f.stdout.readline()
         value_str = value.decode('utf-8')
         print(f'value: |{value_str}|')
-        if "50" == value_str:
+        if "50" == value_str.strip():
             print('move')
             for i in range(int(rotation)):
                 for step in range(len(sequence)):
