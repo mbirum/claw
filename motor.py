@@ -38,6 +38,7 @@ while True:
     if p.poll(0.1):
         value = f.stdout.readline()
         value_str = value.decode('utf-8')
+        value_str = value_str.replace('\n', '')
         print(f'value: |{value_str}|')
         if "50" == value_str.strip():
             print('move')
