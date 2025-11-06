@@ -1,0 +1,151 @@
+read
+select-attribute 00002a6e-0000-1000-8000-00805f9b34fb
+[?2004l[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+read
+read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+read
+read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  32 35                                            25              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  32 35                                            25              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+read
+read
+read
+read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  32 35                                            25              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  32 35                                            25              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+read
+read
+read
+read
+read
+read
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_2read
+read
+read
+read
+read
+read
+read
+read
+8_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /orgread
+read
+read
+read
+read
+read
+read
+read
+/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char00read
+read
+read
+read
+read
+read
+08][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 Value:
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K  35 30                                            50              
+[0;94m[MPY BTSTACK:/service0007/char0008][0m# read
+[?2004lAttempting to read /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008
+[?2004h[0;94m[MPY BTSTACK:/service0007/char0008][0m# [K[[0;93mCHG[0m] Attribute /org/bluez/hci0/dev_28_CD_C1_16_A0_E8/service0007/char0008 
