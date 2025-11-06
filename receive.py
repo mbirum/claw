@@ -28,5 +28,5 @@ while True:
     child.sendline('read')
     variable = child.expect(["\d{2}\s\d{2}"])
     child.expect('#')
-    time.sleep(0.25)
+    time.sleep(0.4)
     os.system("cat output.txt | grep -P '\d{2}\s\d{2}' | tail -n 1 | cut -d'#' -f 2 | awk '{print $4}' > value.txt")
