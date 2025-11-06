@@ -14,9 +14,9 @@ sleep = 0.001
 control_pins = right_pins
 sequence = motor_seq.getForwardSequence()
 
-direction = sys.argv[1]
-if direction == "left":
-    sequence = motor_seq.getBackwardSequence()
+# direction = sys.argv[1]
+# if direction == "left":
+#     sequence = motor_seq.getBackwardSequence()
 
 # max 512
 rotation = 20
