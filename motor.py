@@ -5,6 +5,8 @@ import sys
 import subprocess
 import select
 
+GPIO.cleanup()
+
 GPIO.setmode(GPIO.BOARD)
 
 left_pins = [7,11,13,15]
