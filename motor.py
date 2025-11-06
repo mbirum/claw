@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-import steps
+import motor_seq
 import sys
 import subprocess
 import select
@@ -12,11 +12,11 @@ right_pins = [16,18,22,32]
 sleep = 0.001
 
 control_pins = right_pins
-sequence = steps.getForwardSequence()
+sequence = motor_seq.getForwardSequence()
 
 direction = sys.argv[1]
 if direction == "left":
-    sequence = steps.getBackwardSequence()
+    sequence = motor_seq.getBackwardSequence()
 
 # max 512
 rotation = 20
