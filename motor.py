@@ -40,6 +40,7 @@ while True:
         value_str = value.decode('utf-8')
         print(f'value: {value_str}')
         if "50" == value_str:
+            print('move')
             for i in range(int(rotation)):
                 for step in range(len(sequence)):
                     for pin in range(4):
