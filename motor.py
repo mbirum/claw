@@ -38,7 +38,7 @@ while True:
     if p.poll(0.1):
         value = f.stdout.readline()
         value_str = value.decode('utf-8')
-        print(f'value: {value_str}')
+        print(f'value: |{value_str}|')
         if "50" == value_str:
             print('move')
             for i in range(int(rotation)):
