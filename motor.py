@@ -37,8 +37,9 @@ p.register(f.stdout)
 while True:
     if p.poll(1):
         value = f.stdout.readline()
-        print(f'value: {value}')
-        if "50" == str(value):
+        value_str = value.decode('utf-8')
+        print(f'value: {value_str}')
+        if "50" == value_str:
             for i in range(int(rotation)):
                 for step in range(len(sequence)):
                     for pin in range(4):
