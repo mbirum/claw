@@ -2,6 +2,8 @@ import RPi.GPIO as GPIO
 import time
 import steps
 import sys
+import subprocess
+import select
 
 GPIO.setmode(GPIO.BOARD)
 
@@ -23,11 +25,26 @@ rotation = 20
 for pin in control_pins:
   GPIO.setup(pin, GPIO.OUT)
   GPIO.output(pin, 0)
-  
-for i in range(int(rotation)):
-    for step in range(len(sequence)):
-        for pin in range(4):
-            GPIO.output(control_pins[pin], sequence[step][pin])
-        time.sleep(sleep)
+
+
+#-----------------------------
+f = subprocess.Popen(['tail', '-F', 'output.txt'], stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+p = select.poll()
+p.register(f.stdout)
+
+while True:
+    if p.poll(1):
+        value = f.stdout.readline()
+        print(f'value: {value}')
+        if "50" == str(value):
+            for i in range(int(rotation)):
+                for step in range(len(sequence)):
+                    for pin in range(4):
+                        GPIO.output(control_pins[pin], sequence[step][pin])
+                    time.sleep(0.001)
+    time.sleep(0.1)
+
+
+
         
 GPIO.cleanup()
