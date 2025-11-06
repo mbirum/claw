@@ -30,7 +30,7 @@ for pin in control_pins:
 
 
 #-----------------------------
-f = subprocess.Popen(['tail', '-F', 'output.txt'], stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+f = subprocess.Popen(['tail', '-F', 'value.txt'], stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 p = select.poll()
 p.register(f.stdout)
 
