@@ -65,7 +65,7 @@ else:
 			control_pins = right_pins
 			sequence = motor_seq.getForwardSequence()
 			for i in range(int(rotation)):
-                for step in range(len(sequence)):
-                    for pin in range(4):
-                        GPIO.output(control_pins[pin], sequence[step][pin])
-                    time.sleep(0.001)
+				for step in range(len(sequence)):
+					for pin in range(4):
+						GPIO.output(control_pins[pin], sequence[step][pin])
+					time.sleep(0.001)
