@@ -49,7 +49,7 @@ else:
 				elif event.value > 0:
 					print(f"right {event.value}")
 			elif event.type == pygame.JOYAXISMOTION and event.axis == 1:
-				if event.value < 0:
+				if event.value <= 0.05:
 					print(f"up {event.value}")
-				elif event.value > 0:
+				elif event.value >= 0.07:
 					print(f"down {event.value}")
