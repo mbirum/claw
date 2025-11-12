@@ -17,7 +17,7 @@ control_pins = right_pins
 sequence = motor_seq.getForwardSequence()
 
 # max 512
-rotation = 20
+rotation = 5
 
 # initialize pins
 for pin in control_pins:
@@ -31,6 +31,10 @@ joystick_count = pygame.joystick.get_count()
 if joystick_count < 1:
 	print("No joystick found")
 else:
+	y_axis_direction = 0
+	y_axis_speed_factor = 1
+	x_axis_direction = 0
+	x_axis_speed_factor = 1
 	joystick = pygame.joystick.Joystick(0)
 	joystick.init()
 	print("Initialized joystick")
@@ -51,5 +55,17 @@ else:
 			elif event.type == pygame.JOYAXISMOTION and event.axis == 1:
 				if event.value <= 0.05:
 					print(f"up {event.value}")
+					y_axis_direction = -1
 				elif event.value >= 0.07:
 					print(f"down {event.value}")
+					y_axis_direction = 1
+				else:
+					y_axis_direction = 0
+		if y_axis_direction < 0:
+			control_pins = right_pins
+			sequence = motor_seq.getForwardSequence()
+			for i in range(int(rotation)):
+                for step in range(len(sequence)):
+                    for pin in range(4):
+                        GPIO.output(control_pins[pin], sequence[step][pin])
+                    time.sleep(0.001)
