@@ -62,8 +62,14 @@ else:
 				else:
 					y_axis_direction = 0
 		if y_axis_direction < 0:
-			control_pins = right_pins
 			sequence = motor_seq.getForwardSequence()
+			for i in range(int(rotation)):
+				for step in range(len(sequence)):
+					for pin in range(4):
+						GPIO.output(control_pins[pin], sequence[step][pin])
+					time.sleep(0.001)
+		elif y_axis_direction > 0:
+			sequence = motor_seq.getBackwardSequence()
 			for i in range(int(rotation)):
 				for step in range(len(sequence)):
 					for pin in range(4):
