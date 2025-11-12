@@ -11,7 +11,7 @@ GPIO.setmode(GPIO.BOARD)
 
 left_pins = [7,11,13,15]
 right_pins = [16,18,22,32]
-sleep = 0.001
+sleep_interval = 0.001
 
 control_pins = right_pins
 sequence = motor_seq.getForwardSequence()
@@ -56,9 +56,23 @@ else:
 				if event.value <= 0.05:
 					print(f"up {event.value}")
 					y_axis_direction = -1
+					speed = 10 - (round(abs(event.value),1) * 10)
+					if speed < 1:
+						speed = 1
+					elif speed > 10:
+						speed = 10
+					speed = speed / 1000
+					sleep_interval = speed
 				elif event.value >= 0.07:
 					print(f"down {event.value}")
 					y_axis_direction = 1
+					speed = 10 - (round(abs(event.value),1) * 10)
+					if speed < 1:
+						speed = 1
+					elif speed > 10:
+						speed = 10
+					speed = speed / 1000
+					sleep_interval = speed
 				else:
 					y_axis_direction = 0
 		if y_axis_direction < 0:
@@ -67,11 +81,11 @@ else:
 				for step in range(len(sequence)):
 					for pin in range(4):
 						GPIO.output(control_pins[pin], sequence[step][pin])
-					time.sleep(0.001)
+					time.sleep(sleep_interval)
 		elif y_axis_direction > 0:
 			sequence = motor_seq.getBackwardSequence()
 			for i in range(int(rotation)):
 				for step in range(len(sequence)):
 					for pin in range(4):
 						GPIO.output(control_pins[pin], sequence[step][pin])
-					time.sleep(0.001)
+					time.sleep(sleep_interval)
