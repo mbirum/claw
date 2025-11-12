@@ -19,5 +19,13 @@ else:
 				print(f"Button {event.button} pressed")
 			elif event.type == pygame.JOYBUTTONUP:
 				print(f"Button {event.button} released")
-			elif event.type == pygame.JOYAXISMOTION and event.axis == 3:
-				print(f"Axis {event.axis} moved to {event.value}")
+			elif event.type == pygame.JOYAXISMOTION and event.axis == 0:
+				if event.value < 0:
+					print(f"left {event.value}")
+				elif event.value > 0:
+					print(f"right {event.value}")
+			elif event.type == pygame.JOYAXISMOTION and event.axis == 1:
+				if event.value < 0:
+					print(f"down {event.value}")
+				elif event.value > 0:
+					print(f"up {event.value}")
