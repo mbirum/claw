@@ -1,4 +1,5 @@
 import pygame
+import os
 
 pygame.init()
 pygame.joystick.init()
@@ -26,6 +27,7 @@ else:
 					print(f"right {event.value}")
 			elif event.type == pygame.JOYAXISMOTION and event.axis == 1:
 				if event.value < 0:
-					print(f"up {event.value}")
+					# print(f"up {event.value}")
+					os.system("~/pymotor/env/bin/python3 motor.py right &")
 				elif event.value > 0:
 					print(f"down {event.value}")
