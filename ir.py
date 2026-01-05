@@ -11,7 +11,7 @@ import adafruit_irremote
 import os
 import time
 
-GPIO.setmode(GPIO.BOARD)
+# GPIO.setmode(GPIO.BOARD)
 
 left_pins = [7,11,13,15]
 right_pins = [16,18,22,32]
