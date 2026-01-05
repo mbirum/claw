@@ -22,7 +22,7 @@ control_pins = right_pins
 sequence = motor_seq.getForwardSequence()
 
 # max 512
-rotation = 5
+rotation = 10
 
 # initialize pins
 for pin in control_pins:
