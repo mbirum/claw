@@ -55,6 +55,7 @@ while True:
       for i in range(int(rotation)):
         for step in range(len(sequence)):
           for pin in range(4):
+            print(f"{control_pins[pin]}, {sequence[step][pin]}")
             GPIO.output(control_pins[pin], sequence[step][pin])
           time.sleep(sleep_interval)
     elif y_axis_direction > 0:
