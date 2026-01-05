@@ -43,6 +43,7 @@ decoder = adafruit_irremote.NonblockingGenericDecode(ir_receiver)
 while True:
   try:
     for message in decoder.read():
+      y_axis_direction = 0
       if isinstance(message, adafruit_irremote.IRMessage):
           one, two, three, four = message.code
           print(four)
