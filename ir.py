@@ -42,8 +42,8 @@ decoder = adafruit_irremote.NonblockingGenericDecode(ir_receiver)
 
 while True:
   try:
+    y_axis_direction = 0
     for message in decoder.read():
-      y_axis_direction = 0
       if isinstance(message, adafruit_irremote.IRMessage):
           one, two, three, four = message.code
           print(four)
@@ -71,6 +71,6 @@ while True:
             time.sleep(sleep_interval)
       else:
         print("Error decoding")
-        y_axis_direction = 0
+      y_axis_direction = 0
   except Exception as e:
     print(f"error - {e}")
