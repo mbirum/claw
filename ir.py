@@ -5,13 +5,13 @@ import motor_seq
 import sys
 import subprocess
 import select
-# import board
+import board
 import pulseio
 import adafruit_irremote
 import os
 import time
 
-GPIO.setmode(GPIO.BOARD)
+# GPIO.setmode(GPIO.BOARD)
 
 left_pins = [7,11,13,15]
 right_pins = [16,18,22,32]
@@ -36,7 +36,7 @@ x_axis_speed_factor = 1
 
 # GPIO.setup(17, GPIO.IN)
 
-ir_receiver = pulseio.PulseIn(17, maxlen=200, idle_state=True)
+ir_receiver = pulseio.PulseIn(board.D17, maxlen=200, idle_state=True)
 decoder = adafruit_irremote.NonblockingGenericDecode(ir_receiver)
 
 while True:
