@@ -50,21 +50,21 @@ while True:
             y_axis_direction = -1
         elif "85" == str(four): # right
             y_axis_direction = 1
+    if y_axis_direction < 0:
+      sequence = motor_seq.getForwardSequence()
+      for i in range(int(rotation)):
+        for step in range(len(sequence)):
+          for pin in range(4):
+            GPIO.output(control_pins[pin], sequence[step][pin])
+          time.sleep(sleep_interval)
+    elif y_axis_direction > 0:
+      sequence = motor_seq.getBackwardSequence()
+      for i in range(int(rotation)):
+        for step in range(len(sequence)):
+          for pin in range(4):
+            GPIO.output(control_pins[pin], sequence[step][pin])
+          time.sleep(sleep_interval)
     else:
       print("Error decoding")
       y_axis_direction = 0
       
-  if y_axis_direction < 0:
-    sequence = motor_seq.getForwardSequence()
-    for i in range(int(rotation)):
-      for step in range(len(sequence)):
-        for pin in range(4):
-          GPIO.output(control_pins[pin], sequence[step][pin])
-        time.sleep(sleep_interval)
-  elif y_axis_direction > 0:
-    sequence = motor_seq.getBackwardSequence()
-    for i in range(int(rotation)):
-      for step in range(len(sequence)):
-        for pin in range(4):
-          GPIO.output(control_pins[pin], sequence[step][pin])
-        time.sleep(sleep_interval)
