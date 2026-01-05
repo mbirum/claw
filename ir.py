@@ -41,33 +41,35 @@ ir_receiver = pulseio.PulseIn(board.D17, maxlen=200, idle_state=True)
 decoder = adafruit_irremote.NonblockingGenericDecode(ir_receiver)
 
 while True:
-  for message in decoder.read():
-    if isinstance(message, adafruit_irremote.IRMessage):
-        one, two, three, four = message.code
-        print(four)
-        if "4" == str(four): # up
-            y_axis_direction = 1
-        elif "187" == str(four): # down
-            y_axis_direction = -1
-        elif "51" == str(four): # left
-            y_axis_direction = -1
-        elif "85" == str(four): # right
-            y_axis_direction = 1
-    if y_axis_direction < 0:
-      sequence = motor_seq.getForwardSequence()
-      for i in range(int(rotation)):
-        for step in range(len(sequence)):
-          for pin in range(4):
-            GPIO.output(control_pins[pin], sequence[step][pin])
-          time.sleep(sleep_interval)
-    elif y_axis_direction > 0:
-      sequence = motor_seq.getBackwardSequence()
-      for i in range(int(rotation)):
-        for step in range(len(sequence)):
-          for pin in range(4):
-            GPIO.output(control_pins[pin], sequence[step][pin])
-          time.sleep(sleep_interval)
-    else:
-      print("Error decoding")
-      y_axis_direction = 0
-      
+  try:
+    for message in decoder.read():
+      if isinstance(message, adafruit_irremote.IRMessage):
+          one, two, three, four = message.code
+          print(four)
+          if "4" == str(four): # up
+              y_axis_direction = 1
+          elif "187" == str(four): # down
+              y_axis_direction = -1
+          elif "51" == str(four): # left
+              y_axis_direction = -1
+          elif "85" == str(four): # right
+              y_axis_direction = 1
+      if y_axis_direction < 0:
+        sequence = motor_seq.getForwardSequence()
+        for i in range(int(rotation)):
+          for step in range(len(sequence)):
+            for pin in range(4):
+              GPIO.output(control_pins[pin], sequence[step][pin])
+            time.sleep(sleep_interval)
+      elif y_axis_direction > 0:
+        sequence = motor_seq.getBackwardSequence()
+        for i in range(int(rotation)):
+          for step in range(len(sequence)):
+            for pin in range(4):
+              GPIO.output(control_pins[pin], sequence[step][pin])
+            time.sleep(sleep_interval)
+      else:
+        print("Error decoding")
+        y_axis_direction = 0
+  except Exception as e:
+    print(f"error - {e}")
