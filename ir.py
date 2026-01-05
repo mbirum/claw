@@ -11,7 +11,7 @@ import adafruit_irremote
 import os
 import time
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
 left_pins = [7,11,13,15]
 right_pins = [16,18,22,32]
@@ -34,7 +34,7 @@ y_axis_speed_factor = 1
 x_axis_direction = 0
 x_axis_speed_factor = 1
 
-GPIO.setup(17, GPIO.IN)
+# GPIO.setup(17, GPIO.IN)
 
 ir_receiver = pulseio.PulseIn(17, maxlen=200, idle_state=True)
 decoder = adafruit_irremote.NonblockingGenericDecode(ir_receiver)
