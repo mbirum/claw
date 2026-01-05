@@ -16,7 +16,7 @@ import time
 # left_pins = [7,11,13,15]
 # right_pins = [16,18,22,32]
 right_pins = [23,24,25,12]
-sleep_interval = 0.001
+sleep_interval = 0.01
 
 control_pins = right_pins
 sequence = motor_seq.getForwardSequence()
@@ -58,7 +58,6 @@ while True:
       for i in range(int(rotation)):
         for step in range(len(sequence)):
           for pin in range(4):
-            print(f"{control_pins[pin]}, {sequence[step][pin]}")
             GPIO.output(control_pins[pin], sequence[step][pin])
           time.sleep(sleep_interval)
     elif y_axis_direction > 0:
